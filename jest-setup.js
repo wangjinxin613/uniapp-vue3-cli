@@ -3,10 +3,8 @@ const {
 	configureToMatchImageSnapshot
 } = require('jest-image-snapshot');
 
-console.log('执行到此');
-
 const hbuilderx_version = 'dev 2.0.0'
-const uniTestPlatformInfo = 'android'
+const uniTestPlatformInfo = process.env.UNI_OS_NAME
 const folderName = `__image_snapshots__/${hbuilderx_version}/__${uniTestPlatformInfo}__`
 let environment = 'official'
 if(hbuilderx_version.includes('dev')){

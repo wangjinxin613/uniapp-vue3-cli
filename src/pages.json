@@ -11,6 +11,12 @@
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
+		},
+    {
+			"path": "pages/data/data",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
 		}
 	],
 	"globalStyle": {

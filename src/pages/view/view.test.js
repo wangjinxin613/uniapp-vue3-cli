@@ -16,7 +16,6 @@ describe('pages/view/view.vue', () => {
 	 */
 	it('view 组件标题', async () => {
 		let view = await page.$('.common-page-head-title')
-    console.log(222,view)
 		expect(await view.text()).toBe('view')
 	})
 	/**
@@ -37,6 +36,17 @@ describe('pages/view/view.vue', () => {
 	it('view 前三个元素颜色', async () => {
 		let viewRed = await page.$('.uni-bg-red')
 		expect(await viewRed.style('backgroundColor')).toBe('rgb(247, 98, 96)')
+	})
+
+  it('id选择器', async () => {
+		let viewRed = await page.$('#id-view')
+		expect(await viewRed.text()).toBe('id选择器')
+	})
+
+  it('标签选择器', async () => {
+		let tagElement = await page.$('#tag')
+    let textElement = await tagElement.$('text');
+		expect(await textElement.text()).toBe('标签1')
 	})
 
   it('screenshot', async () => {

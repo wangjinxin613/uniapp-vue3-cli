@@ -98,6 +98,11 @@
 					</view>
 				</view>
 			</view>
+
+      <view id="id-view">id选择器</view>
+      <view id="tag">
+        <text>标签1</text>
+      </view>
 		</view>
 	</view>
 </template>
