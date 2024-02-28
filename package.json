@@ -38,11 +38,11 @@
     "build:quickapp-webview-huawei": "uni build -p quickapp-webview-huawei",
     "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
     "type-check": "vue-tsc --noEmit",
-    "test:h5": "cross-env UNI_PLATFORM=h5 jest -i",
+    "test:h5": "cross-env UNI_PLATFORM=h5 UNI_OS_NAME=h5 jest -i",
     "test:android": "cross-env UNI_PLATFORM=app UNI_OS_NAME=android UNI_HBUILDERX_PLUGINS=/Applications/HBuilderX-Dev.app/Contents/HBuilderX/plugins jest -i",
     "test:ios": "cross-env UNI_PLATFORM=app UNI_OS_NAME=ios jest -i",
-    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
-    "test:mp-baidu": "cross-env UNI_PLATFORM=mp-baidu jest -i"
+    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin UNI_OS_NAME=weixin jest -i",
+    "test:mp-baidu": "cross-env UNI_PLATFORM=mp-baidu UNI_OS_NAME=baidu jest -i"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-3090920231225001",
