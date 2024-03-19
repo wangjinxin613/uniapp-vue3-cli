@@ -2,7 +2,6 @@
   "name": "uni-preset-vue",
   "version": "0.0.0",
   "scripts": {
-    "test1": "uni --auto-port 9520",
     "dev:app": "uni -p app",
     "dev:app-android": "uni -p app-android",
     "dev:app-ios": "uni -p app-ios",
